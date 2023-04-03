@@ -104,7 +104,7 @@ namespace APIProject.Controllers
         [HttpPut]
         [Route("/update/{Id}")]
         public IActionResult Update(int Id,[FromBody] Student obj)
-        {2
+        {
             if(Id == obj.Id)
             {
                 var student = students.Where(q => q.Id == Id).FirstOrDefault();
