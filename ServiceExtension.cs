@@ -15,12 +15,13 @@ namespace APIProject
         }
         #endregion
 
-
+        #region INTERFACE CONFIGURATION
         public static void ConfigureInterfaceAddrepository(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IStudentServices, StudentServices>();
         }
+        #endregion
     }
 
-    
+
 }

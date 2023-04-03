@@ -75,7 +75,7 @@ namespace APIProject.Controllers
         }
 
         [HttpGet]
-        [Route("{Id}/najjjjffffffjme/{Name}")]
+        [Route("{Id}/{Name}")]
         public IActionResult GetById(int Id, string Name)
         {
             var student = students.Where(q => q.Id == Id && q.Name == Name).FirstOrDefault();
